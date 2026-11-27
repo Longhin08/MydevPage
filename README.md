@@ -19,7 +19,7 @@ npx wrangler login
 npx wrangler deploy
 ```
 
-O endereço aparece no final, no formato `joao-victor-dev.<sua-conta>.workers.dev`.
+O endereço aparece no final, no formato `mydevpage.<sua-conta>.workers.dev`.
 O nome vem do `wrangler.jsonc`.
 
 **Pelo painel, com deploy automático a cada push:** em *Workers & Pages*, crie uma aplicação
