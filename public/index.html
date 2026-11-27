@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Victor, desenvolvedor backend C# e .NET</title>
+  <meta name="description" content="Conheça João Victor, desenvolvedor backend júnior focado em C# e .NET, e os projetos que ele constrói.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="João Victor, desenvolvedor backend C# e .NET">
+  <meta property="og:description" content="Sobre mim e meus projetos em destaque.">
+  <meta name="theme-color" content="#512bd4">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/joao.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#projetos">Pular para os projetos</a>
+
+<header class="hero" id="topo">
+  <nav class="nav" aria-label="Principal">
+    <a class="nav-name" href="#topo">João Victor</a>
+    <ul>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1 aria-label="João Victor">
+        <span class="word" aria-hidden="true">João</span>
+        <span class="word" aria-hidden="true">Victor</span>
+      </h1>
+      <p class="hero-role">Desenvolvedor backend em C# e .NET.</p>
+      <p class="hero-text">Estudo Análise e Desenvolvimento de Sistemas e procuro minha primeira oportunidade como desenvolvedor.</p>
+      <div class="actions">
+        <a class="btn btn-ink" href="#projetos">Ver meus projetos</a>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/jo%C3%A3o-victor-50b49922b/" target="_blank" rel="noopener">Falar no LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="portrait" id="portrait">
+      <div class="disc disc-accent" aria-hidden="true"></div>
+      <div class="disc disc-pink" aria-hidden="true"></div>
+      <img src="assets/joao.webp" width="941" height="1195" alt="João Victor de camiseta preta, tirando uma foto no espelho" fetchpriority="high">
+    </div>
+  </div>
+
+  <svg class="cable" viewBox="0 0 1440 170" preserveAspectRatio="none" aria-hidden="true">
+    <path class="cable-line" pathLength="1" d="M-20 52 C 190 52, 230 148, 470 128 S 800 20, 1010 76 S 1250 170, 1460 96"/>
+    <path class="cable-pulse" pathLength="1" d="M-20 52 C 190 52, 230 148, 470 128 S 800 20, 1010 76 S 1250 170, 1460 96"/>
+  </svg>
+</header>
+
+<main>
+  <section class="board-section" id="projetos" aria-labelledby="projetos-title">
+    <div class="wrap">
+      <h2 id="projetos-title">Projetos em destaque</h2>
+      <p class="lead">Pise em um pedal para ir até o projeto.</p>
+      <ul class="pedalboard">
+        <li><a class="pedal pedal-accent" href="#nam"><span class="knobs" aria-hidden="true"><i></i><i></i><i></i></span><strong>NAM Chain Capture</strong><span>App de áudio em Python</span><span class="switch" aria-hidden="true"></span></a></li>
+        <li><a class="pedal pedal-pink" href="#hamburger"><span class="knobs" aria-hidden="true"><i></i><i></i></span><strong>Good Hamburger</strong><span>API de pedidos em .NET</span><span class="switch" aria-hidden="true"></span></a></li>
+        <li><a class="pedal pedal-lilac" href="#screensound"><span class="knobs" aria-hidden="true"><i></i><i></i><i></i></span><strong>ScreenSound</strong><span>CRUD em API REST .NET</span><span class="switch" aria-hidden="true"></span></a></li>
+        <li><a class="pedal pedal-white" href="#linux"><span class="knobs" aria-hidden="true"><i></i></span><strong>linux-setup</strong><span>Meu Linux em um comando</span><span class="switch" aria-hidden="true"></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <article class="project nam" id="nam" aria-labelledby="nam-title">
+    <div class="wrap">
+      <div class="project-head">
+        <h3 id="nam-title">NAM Chain Capture</h3>
+        <p>Algumas pedaleiras só aceitam um bloco NAM por preset. Este app recebe várias capturas, encadeia em série e treina uma única captura que reproduz a cadeia inteira.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="switcher" role="group" aria-label="Telas do app">
+          <button type="button" aria-pressed="true" data-src="assets/nam-cadeia.webp" data-w="2300" data-h="1475"
+            data-alt="Tela do app com um pedal CE-1 seguido de dois amplificadores em paralelo, A e B"
+            data-caption="Uma cadeia que montei: o pedal CE-1 e depois o sinal dividido em dois amplificadores, A e B.">Montar a cadeia</button>
+          <button type="button" aria-pressed="false" data-src="assets/nam-treino.webp" data-w="1538" data-h="770"
+            data-alt="Painéis para ouvir a cadeia e para treinar a captura única, com a escolha do tamanho do modelo"
+            data-caption="Antes de treinar dá para ouvir a cadeia. Depois é só escolher o tamanho do modelo e treinar no PC ou na nuvem.">Ouvir e treinar</button>
+          <button type="button" aria-pressed="false" data-src="assets/nam-resultado.webp" data-w="1107" data-h="213"
+            data-alt="Treino concluído com ESR 1.48e-3, classificado como ótimo, e botões para ouvir e baixar o resultado"
+            data-caption="Um treino concluído, com ESR de 0,00148 (quanto menor, mais fiel). O app deixa ouvir, comparar e baixar a captura.">Resultado do treino</button>
+        </div>
+        <a class="frame" id="frame" href="assets/nam-cadeia.webp" target="_blank" rel="noopener" aria-label="Abrir a imagem em tamanho real">
+          <img id="frame-img" src="assets/nam-cadeia.webp" width="2300" height="1475" loading="lazy" alt="Tela do app com um pedal CE-1 seguido de dois amplificadores em paralelo, A e B">
+        </a>
+        <p class="zoom-hint fine">Toque na imagem para ampliar.</p>
+        <p id="frame-caption" aria-live="polite">Uma cadeia que montei: o pedal CE-1 e depois o sinal dividido em dois amplificadores, A e B.</p>
+      </div>
+
+      <div class="project-foot">
+        <ul class="tags" aria-label="Tecnologias"><li>Python</li><li>JavaScript</li><li>App para Windows e macOS</li><li>Treino em GPU</li><li>Licença MIT</li></ul>
+        <div class="actions">
+          <a class="btn btn-light" href="https://github.com/Longhin08/nam-chain-capture" target="_blank" rel="noopener">Ver o código</a>
+          <a class="btn btn-line-light" href="https://github.com/Longhin08/nam-chain-capture/releases/latest" target="_blank" rel="noopener">Baixar o app</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="project hamburger" id="hamburger" aria-labelledby="hamburger-title">
+    <div class="wrap two-col">
+      <div>
+        <h3 id="hamburger-title">Good Hamburger</h3>
+        <p>Sistema de pedidos para uma lanchonete. A primeira versão usa ASP.NET Core 8, Blazor WebAssembly e testes com xUnit, com as camadas de domínio, aplicação e API separadas.</p>
+        <p>Na versão 2.0, um painel em React e TypeScript conversa com uma API que tem login com JWT, perfis de acesso, Entity Framework Core com PostgreSQL e testes com xUnit e Moq.</p>
+        <ul class="tags" aria-label="Tecnologias"><li>C#</li><li>ASP.NET Core</li><li>EF Core</li><li>PostgreSQL</li><li>React</li><li>xUnit</li></ul>
+        <div class="actions">
+          <a class="btn btn-ink" href="https://github.com/Longhin08/Goodhamburger-2.0" target="_blank" rel="noopener">Ver a versão 2.0</a>
+          <a class="btn btn-line" href="https://github.com/Longhin08/Goodhamburger" target="_blank" rel="noopener">Ver a primeira versão</a>
+        </div>
+      </div>
+
+      <form class="ticket" id="ticket">
+        <fieldset>
+          <legend>Monte um pedido</legend>
+          <label><input type="checkbox" name="sandwichId" value="x-burger" checked><span>X-Burger</span></label>
+          <label><input type="checkbox" name="sideDishId" value="fries"><span>Batata frita</span></label>
+          <label><input type="checkbox" name="drinkId" value="soda"><span>Refrigerante</span></label>
+        </fieldset>
+        <output class="discount" id="discount" aria-live="polite"><b id="discount-value">0%</b><span id="discount-text">de desconto</span></output>
+        <pre aria-label="Corpo da requisição"><code id="payload">POST /api/orders
+{
+  "sandwichId": "x-burger"
+}</code></pre>
+        <p class="fine">Mesmas regras de desconto da primeira versão da API.</p>
+      </form>
+    </div>
+  </article>
+
+  <article class="project screensound" id="screensound" aria-labelledby="screensound-title">
+    <div class="wrap two-col two-col-flip">
+      <div>
+        <h3 id="screensound-title">ScreenSound</h3>
+        <p>API REST de CRUD para um catálogo de música. Artistas e músicas têm as quatro operações: criar, ler, atualizar e excluir. Gêneros têm criar, ler e excluir.</p>
+        <p>Os dados ficam no SQL Server, com Entity Framework Core e migrations. O projeto começou como aplicação de console e evoluiu durante a formação .NET da Alura.</p>
+        <ul class="tags" aria-label="Tecnologias"><li>.NET 8</li><li>Minimal APIs</li><li>EF Core</li><li>SQL Server</li><li>Scalar</li></ul>
+        <div class="actions">
+          <a class="btn btn-ink" href="https://github.com/Longhin08/ScreenSound" target="_blank" rel="noopener">Ver o código</a>
+          <a class="btn btn-line" href="https://github.com/Longhin08/ScreenSoundV2" target="_blank" rel="noopener">Ver a versão console</a>
+        </div>
+      </div>
+
+      <div class="crud" id="crud">
+        <div class="crud-row" role="group" aria-label="Recurso">
+          <button type="button" data-res="artistas" aria-pressed="true">Artistas</button>
+          <button type="button" data-res="musicas" aria-pressed="false">Músicas</button>
+          <button type="button" data-res="generos" aria-pressed="false">Gêneros</button>
+        </div>
+        <div class="crud-ops" role="group" aria-label="Operação">
+          <button type="button" data-op="create" aria-pressed="true"><b>Create</b><span>Criar</span></button>
+          <button type="button" data-op="read" aria-pressed="false"><b>Read</b><span>Ler</span></button>
+          <button type="button" data-op="update" aria-pressed="false"><b>Update</b><span>Atualizar</span></button>
+          <button type="button" data-op="delete" aria-pressed="false"><b>Delete</b><span>Excluir</span></button>
+        </div>
+        <div class="crud-result" id="crud-result" aria-live="polite">
+          <pre><code id="crud-request">POST /Artistas
+{
+  "nome": "string",
+  "bio": "string"
+}</code></pre>
+          <p id="crud-response">Responde 201 Created com o artista criado.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="project linux" id="linux" aria-labelledby="linux-title">
+    <div class="wrap">
+      <div class="project-head">
+        <h3 id="linux-title">linux-setup</h3>
+        <p>Scripts que recriam meu ambiente Linux Mint do zero: programas, ferramentas de desenvolvimento, Docker e um visual de macOS nas cores do Batman. Dá para rodar tudo de novo sem problema.</p>
+      </div>
+      <figure class="shot">
+        <img src="assets/linux-setup.webp" width="1600" height="900" loading="lazy" alt="Área de trabalho Linux Mint com papel de parede do Batman, widgets no topo e dock na parte de baixo">
+      </figure>
+      <div class="project-foot">
+        <div class="command">
+          <code id="cmd">git clone https://github.com/Longhin08/linux-setup.git &amp;&amp; cd linux-setup &amp;&amp; ./install.sh</code>
+          <button type="button" id="copy">Copiar comando</button>
+        </div>
+        <a class="btn btn-ink" href="https://github.com/Longhin08/linux-setup" target="_blank" rel="noopener">Ver o código</a>
+      </div>
+    </div>
+  </article>
+
+  <section class="about" id="sobre" aria-labelledby="sobre-title">
+    <div class="wrap">
+      <h2 id="sobre-title">Sobre mim</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-big">Gosto de aprender o tempo todo e de entregar soluções sólidas e bem estruturadas.</p>
+          <p>Meu foco é C# e .NET. Também já trabalhei com Python e JavaScript, tenho familiaridade com Azure e venho estudando boas práticas de arquitetura de software.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Experiência prática</dt><dd>BPM com SoftExpert, proteção digital em SaaS e projetos internacionais como especialista de produto.</dd></div>
+          <div><dt>Formação</dt><dd>Análise e Desenvolvimento de Sistemas, Anhembi Morumbi (2024 a 2026).</dd></div>
+          <div><dt>Idiomas</dt><dd>Português e inglês fluente.</dd></div>
+        </dl>
+      </div>
+      <div class="ai" aria-labelledby="ai-title">
+        <div>
+          <h3 id="ai-title">IA e orquestração de agentes</h3>
+          <p>A IA faz parte do meu ambiente de desenvolvimento. Trabalho com Claude Code e OpenCode, e uso o Orca para orquestrar agentes, cada um em seu próprio espaço de trabalho.</p>
+          <p>Assim consigo dividir o trabalho em frentes paralelas. A direção continua comigo: defino a tarefa, acompanho os agentes e reviso o que eles entregam.</p>
+        </div>
+        <ol class="flow" aria-label="Como orquestro os agentes">
+          <li class="flow-step">Eu defino a tarefa</li>
+          <li class="flow-step">Orca distribui o trabalho</li>
+          <li class="flow-split">
+            <ul aria-label="Agentes em paralelo"><li>Agente em um workspace</li><li>Agente em outro workspace</li></ul>
+          </li>
+          <li class="flow-step">Eu reviso o resultado</li>
+        </ol>
+      </div>
+
+      <h3 class="stack-title">Com o que eu trabalho</h3>
+      <ul class="stack">
+        <li>C#</li><li>.NET</li><li>Python</li><li>JavaScript</li><li>Node.js</li><li>SQL Server</li><li>Azure</li><li>Claude Code</li><li>OpenCode</li><li>Orca</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="contact" id="contato">
+  <div class="wrap">
+    <h2>Vamos conversar?</h2>
+    <p>Estou procurando minha primeira vaga como desenvolvedor backend. Se o seu time precisa de alguém com vontade de aprender, me chama.</p>
+    <div class="actions">
+      <a class="btn btn-ink btn-big" href="https://www.linkedin.com/in/jo%C3%A3o-victor-50b49922b/" target="_blank" rel="noopener">Falar no LinkedIn</a>
+      <a class="btn btn-line btn-big" href="https://github.com/Longhin08" target="_blank" rel="noopener">Ver meu GitHub</a>
+    </div>
+    <a class="back" href="#topo">Voltar ao topo</a>
+  </div>
+</footer>
+</body>
+</html>
